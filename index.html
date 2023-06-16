@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header" id="myHeader">
       <nav class="navbar navbar-expand-lg bg-body-dark">
         <div class="container-fluid containerNavBar">
           <a class="navbar-brand text-light" href="#">Nicolas Bronzini</a>
@@ -33,20 +33,20 @@
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
+              <li class="nav-item" style="margin-right: 10px">
                 <a
                   class="nav-link text-light linksNavBar"
                   aria-current="page"
-                  href="#"
+                  href="#about"
                   ><i class="fa-solid fa-house"></i>Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light linksNavBar" href="#"
+              <li class="nav-item" style="margin-right: 10px">
+                <a class="nav-link text-light linksNavBar" href="#projects"
                   ><i class="fa-solid fa-briefcase"></i>Trabajos</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item" style="margin-right: 10px">
                 <a class="nav-link text-light linksNavBar" href="#"
                   ><i class="fa-solid fa-envelope"></i>Contacto</a
                 >
@@ -57,9 +57,18 @@
       </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="content">
       <div>
-        <h2>Sobre mí</h2>
+        <h2>
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "Nicolas Bronzini.", "FullStack Developer."]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </h2>
         <p>
           Hola, soy Nicolas Bronzini, un desarrollador Full Stack con
           experiencia en la creación de aplicaciones web innovadoras. Me
@@ -118,6 +127,7 @@
     <footer>
       <p>Derechos de autor &copy; 2023 Nicolas Bronzini</p>
     </footer>
+    <script src="./index.js"></script>
     <script
       src="https://kit.fontawesome.com/4176f1fb9f.js"
       crossorigin="anonymous"
