@@ -1,16 +1,19 @@
 /* styles.css */
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
 /* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff; /* Fondo blanco */
   color: #000000; /* Texto negro */
+  overflow: hidden;
 }
 
 .linksNavBar {
@@ -22,9 +25,12 @@ body {
 
 header {
   background-color: #000000; /* Fondo negro */
-  padding: 20px;
+  padding: 5px;
 }
-
+nav {
+  align-items: center;
+  font-size: 1.2rem;
+}
 header h1 {
   color: #ffffff; /* Texto blanco */
   font-size: 24px;
@@ -32,11 +38,14 @@ header h1 {
 
 section {
   padding: 40px;
+  margin-bottom: 20px;
 }
 
 section h2 {
   font-size: 20px;
   margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 1000;
 }
 
 section p {
@@ -127,4 +136,18 @@ footer {
 .white-icon {
   background-image: none;
   color: rgb(221, 219, 219);
+}
+
+/* header funcion sticky */
+.header {
+  color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+}
+.content {
+  padding-top: 130px !important;
+}
+/* Typing */
+h2 a {
+  text-decoration: none;
 }
