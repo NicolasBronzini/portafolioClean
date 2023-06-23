@@ -11,7 +11,7 @@ html {
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: #e5e5e5;
   color: #000000; /* Texto negro */
   overflow: hidden;
 }
@@ -101,6 +101,8 @@ footer {
   font-size: 36px;
   color: #333333; /* Texto gris oscuro */
   margin-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 100px;
 }
 
 #about p {
@@ -129,6 +131,8 @@ footer {
   background-color: #70707010;
   border-radius: 100%;
   align-items: center;
+  width: 500px;
+  height: 500px;
 }
 .ContainerImgAbaut img {
   border-radius: 100%;
@@ -150,4 +154,43 @@ footer {
 /* Typing */
 h2 a {
   text-decoration: none;
+}
+.ContianerContacto {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+}
+hr {
+  border: none; /* Elimina el borde por defecto */
+  height: 3px; /* Establece la altura deseada */
+  background-color: #000; /* Cambia el color de fondo a negro (#000) */
+  margin: 10px 20px; /* Agrega un margen superior e inferior de 10px */
+}
+.ContainerIcon {
+  font-size: 40px; /* Tamaño de fuente para los íconos */
+  color: #333; /* Color de los íconos */
+}
+
+.ContainerIcon i {
+  margin: -20px 0px; /* Espacio horizontal entre los íconos */
+}
+.dataContact {
+  border-right: 0.1px solid rgb(158, 158, 158);
+  padding-right: 30px;
+  margin-top: 20px;
+}
+#ContianerMail {
+  padding: 50px 0px;
+  margin-left: -150px;
+}
+.ContainerData {
+  padding: 50px;
+}
+.ContainerData p {
+  padding-right: 30px;
+}
+.contianerLinks {
+  margin-top: 50px;
+  margin-left: -100px;
 }
